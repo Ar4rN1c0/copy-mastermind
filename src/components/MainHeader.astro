@@ -1,0 +1,24 @@
+---
+import Logo from './Logo.astro'
+---
+
+
+<header class="fixed z-[200] px-[18.5%] py-[30px] flex flex-row w-screen justify-between text-pink-600 bg-white">
+    <Logo/>
+    <nav class="flex flex-grow justify-end">
+        <ul class="flex flex-row [&>li]:px-5 [&>li]:pointer [&>li]:select-none text-sm">
+            <li>
+                <a href="#">CURSOS</a>
+            </li>
+            <li>
+                <a href="#">PRECIOS</a>
+            </li>
+            <li>
+                <a href="#">FAQS</a>
+            </li>
+            <li>
+                <a href="#">INICIAR SESIÓN</a>
+            </li>
+        </ul>
+    </nav>
+</header>

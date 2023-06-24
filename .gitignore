@@ -19,3 +19,11 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+.tsconfig.json
+tailwind.config.cjs
+
+.package-lock.json
+package.json
+
+.vscode
