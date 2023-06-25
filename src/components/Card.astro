@@ -13,7 +13,9 @@ const {url, title, creator, type, duration} = Astro.props;
 import Clock from './ClockIco.astro'
 ---
 <section class="rounded-[3%] bg-[#EEE] overflow-hidden flex flex-col justify-between gap-8 cursor-pointer h-[400px] relative top-0 hover:top-[-20px] transition-all duration-[300ms] hover:shadow-lg">
-    <img src={url} class="w-[100%]">
+    <div class="w-[100%] overflow-hidden">
+        <img src={url} class="">
+    </div>
     <header class="text-center flex flex-col justify-center gap-4 ">
         <h3 class="text-[18px]">{title}</h3>
         <div class="flex flex-col [&>span]:my-[-10px]">
@@ -25,7 +27,5 @@ import Clock from './ClockIco.astro'
     <section class="flex flex-row justify-between px-[40px] py-[50px] text-sm text-semibold">
         <span>{type}</span>
         <span class="flex flex-row gap-2 justify-center align-center p-t-[10px]"><Clock />{duration}</span>
-        
-        
     </section>
 </section>

@@ -1,0 +1,30 @@
+---
+import ClockIco from "./ClockIco.astro";
+---
+
+<main class="flex flex-row bg-[#DDD] justify-between gap-0 rounded-[10px] w-[62%] m-auto overflow-hidden top-0 relative transition-all duration-[300ms] cursor-pointer hover:top-[-20px] hover:shadow-lg" onclick="window.location = '#'">
+    <section class="flex flex-col gap-5 px-[30px] pb-[30px]">
+        <header>
+            <h4 class="font-thin mt-[30px] mb-[10px]">
+                Aprende a programar con Python
+            </h4>
+            <p class="text-[11.5px] font-bold">Nate Gentile</p>
+            <span class="flex flex-row justify-center gap-2 text-[10px]"> <img class="object-contain w-[20px] " src="Youtube.svg" alt=""> <p class="my-[5px]">Youtuber</p></span>
+        </header>
+        <p class="text-sm font-semibold traking-wide flex-grow basis-0">
+            ¿No sabes programar? Mejor, porque en este curso vamos a empezar desde cero. Un curso pensado
+            para todas las personas de todas las edades, independientemente de su nivel.
+        </p>
+        <span class="w-100% border-b-[1px] border-[#BBB]"></span>
+        <div class="flex flex-row justify-between px-[70px] text-center">
+            <p>
+                Desarrollo
+            </p>
+            <div class="flex flex-row gap-2">
+                <ClockIco /> <p class="relative top-[-2px]">12 horas</p> 
+            </div>
+        </div>
+    </section>
+
+    <img class="w-[50%]" src="Python.jpg" alt="">
+</main>
