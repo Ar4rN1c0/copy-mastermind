@@ -1,0 +1,17 @@
+---
+import Card from '../components/Card.astro'
+---
+
+
+<article class="relative top-[800px] flex flex-col gap-[70px] justify-center px-[20%]">
+    <h2 class="text-center font-semibold text-3xl">
+        Últimos cursos publicados
+    </h2>
+    <section class="grid grid-cols-3 gap-5">
+
+        <Card duration="5 horas" type="Informática" url="Overclocking.png" title="Overclocking y Undervolting" creator="Arturo Alonso"/>
+        <Card duration="10 horas" type="Desarrollo" url="Typescript.jpg" title="Introducción a Typescript" creator='Paco'/>
+        <Card duration="3 horas" type="Maker" url="arduino.png" title="Creando con componentes de Arduino" creator='Tomás Castellanos'/>
+
+    </section>
+</article>

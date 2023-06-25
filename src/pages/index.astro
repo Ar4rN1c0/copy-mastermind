@@ -2,29 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import MainHeader from '../components/MainHeader.astro'
 import FirstMain from '../components/FirstMain.astro';
-import Card from '../components/Card.astro'
+import LastCourses from '../components/LastCourses.astro'
+import BestCourses from '../components/BestCourses.astro';
 ---
 
 <Layout title="Mastermind">
-
-	<MainHeader />
+	
+	<!-- <MainHeader />
 
 
 	<FirstMain />
 	
-	<article class="relative top-[800px] flex flex-col gap-8 bg-white justify-center px-[20%]">
-		<h2 class="text-center font-semibold text-3xl">
-			Últimos cursos publicados
-		</h2>
-		<section class="grid grid-cols-3 gap-3">
-			<Card url="Overclocking.png" title="Overclocking y Undervolting" creator="Arturo Alonso"/>
-			<Card url="Typescript.jpg" title="Introducción a Typescript" creator='Paco'/>
-			<Card url="arduino.png" title="Creando con componentes de Arduino" creator='Tomás Castellanos'/>
+	<LastCourses /> -->
 
-		</section>
-	</article>
-
-
+	<BestCourses />
 	<style>
 		body::-webkit-scrollbar {
 			width: 5px;
@@ -44,9 +35,6 @@ import Card from '../components/Card.astro'
 
 		img{
 			pointer-events: none !Important;
-		}
-		*{
-			background-color: white;
 		}
 	</style>
 </Layout>

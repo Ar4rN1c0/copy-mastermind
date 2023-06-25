@@ -2,14 +2,30 @@
 export interface Props {
     url: string,
     title: string,
-    creator: string
+    creator: string,
+    type: string,
+    duration: string
 }
 
-const {url, title, creator} = Astro.props;
+const {url, title, creator, type, duration} = Astro.props;
+
+
+import Clock from './ClockIco.astro'
 ---
-<section class="rounded-[3%] bg-[#FF0] h-[300px] overflow-hidden">
+<section class="rounded-[3%] bg-[#EEE] overflow-hidden flex flex-col justify-between gap-8 cursor-pointer h-[400px] relative top-0 hover:top-[-20px] transition-all duration-[300ms] hover:shadow-lg">
     <img src={url} class="w-[100%]">
-    <header class="text-center flex flex-col justify-center">
-        <h3>{title}</h3>
+    <header class="text-center flex flex-col justify-center gap-4 ">
+        <h3 class="text-[18px]">{title}</h3>
+        <div class="flex flex-col [&>span]:my-[-10px]">
+            <span class="text-sm">{creator}</span><br>
+            <span class="text-[10px]">Profesor acreditado <span class="text-[10px] ">&#10004</span></span>
+            <span class="w-[100%] border-b-[1px] border-[#BBB] relative top-[40px]"> </span>   
+        </div>
     </header>
+    <section class="flex flex-row justify-between px-[40px] py-[50px] text-sm text-semibold">
+        <span>{type}</span>
+        <span class="flex flex-row gap-2 justify-center align-center p-t-[10px]"><Clock />{duration}</span>
+        
+        
+    </section>
 </section>
